@@ -1,0 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.cards{
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2em;
+    width: 400px;
+    height: 400px;
+    background-color: blue;
+}
+
+.card {
+    height: 160px;
+    width: 160px;
+    background-color: beige;
+    cursor: pointer;
+    border-radius: 10px;
+  
+}
+
+.card:hover{
+    transform: scale(1.03);
+}
+
+.card img{
+    width: 90%;
+    height: 90%;
+    margin: 8px;
+    margin-left: 8px;
+    opacity: 0;
+}
+img.umgedreht{
+    opacity: 100;
+}
+
+img.korrekt{
+    opacity: 100;
+    border-color: green;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+}
+
+img.fehler{
+    opacity: 100;
+    border-color: red;
+    border-width: 5px;
+    border-style: solid;
+    border-radius: 10px;
+}
